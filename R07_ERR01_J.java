@@ -7,7 +7,7 @@ public class R07_ERR01_J {
             System.out.println(result);
 
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("An error occurred. Please try again.");
         }
     }
 }
