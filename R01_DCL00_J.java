@@ -1,7 +1,7 @@
 public class R01_DCL00_J {
 
     static class A {
-        static int value = B.value;
+        static int value = 10;
     }
 
     static class B {
@@ -9,6 +9,6 @@ public class R01_DCL00_J {
     }
 
     public static void main(String[] args) {
-        System.out.println(A.value);
+        System.out.println(B.value);
     }
 }
