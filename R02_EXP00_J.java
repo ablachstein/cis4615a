@@ -10,6 +10,8 @@ public class R02_EXP00_J {
         File someFile = new File("someFileName.txt");
 
         // Do something with someFile
-        someFile.delete();
+        if (!someFile.delete()) {
+            System.out.println("Failed to delete the file.");
+        }
     }
 }
