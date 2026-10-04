@@ -11,12 +11,12 @@ public class R14_SER01_J implements Serializable {
         // Initialize
     }
 
-    public static void writeObject(final ObjectOutputStream stream)
+    private void writeObject(final ObjectOutputStream stream)
             throws IOException {
         stream.defaultWriteObject();
     }
 
-    public static void readObject(final ObjectInputStream stream)
+    private void readObject(final ObjectInputStream stream)
             throws IOException, ClassNotFoundException {
         stream.defaultReadObject();
     }
