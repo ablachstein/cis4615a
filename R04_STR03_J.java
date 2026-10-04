@@ -6,13 +6,13 @@ public class R04_STR03_J {
 
         BigInteger x = new BigInteger("530500452766");
 
-        byte[] byteArray = x.toByteArray();
+        String s = x.toString(); // Valid character data
 
-        String s = new String(byteArray);
+        byte[] byteArray = s.getBytes();
 
-        byteArray = s.getBytes();
+        String ns = new String(byteArray);
 
-        x = new BigInteger(byteArray);
+        x = new BigInteger(ns);
 
         System.out.println(x);
     }
